@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahi's Dreamy Milk Night</title>
+    <style>
+        @keyframes drinkMilk {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-5px); }
+        }
+
+        @keyframes twinkle {
+            0%, 100% { opacity: 0.6; }
+            50% { opacity: 1; }
+        }
+
+        @keyframes moveStar {
+            0% { transform: translateX(0) translateY(0); }
+            100% { transform: translateX(100vw) translateY(20vh); }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        body {
+            font-family: 'Comic Sans MS', 'Arial', sans-serif;
+            background: linear-gradient(to top, #0d1b2a, #1b263b, #415a77);
+            color: #fff;
+            text-align: center;
+            padding: 50px;
+            animation: fadeIn 2s ease-in-out;
+            overflow: hidden;
+        }
+
+        .header {
+            background-color: #1c3b57;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin: 0;
+            color: #e0f7fa;
+            text-shadow: 1px 1px 4px #000;
+        }
+
+        .content {
+            margin-top: 30px;
+            animation: fadeIn 3s ease-in-out;
+        }
+
+        p {
+            font-size: 20px;
+            color: #b2ebf2;
+            margin: 15px 0;
+            text-shadow: 1px 1px 2px #000;
+        }
+
+        .girl-container {
+            position: relative;
+            width: 150px;
+            margin: 30px auto;
+            animation: drinkMilk 2s infinite ease-in-out;
+        }
+
+        .girl-container img {
+            width: 100%;
+            border-radius: 15px;
+        }
+
+        .images-section {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .images-section img {
+            width: 100px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .star-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            pointer-events: none;
+        }
+
+        .star {
+            position: absolute;
+            width: 5px;
+            height: 5px;
+            background-color: #fff;
+            border-radius: 50%;
+            box-shadow: 0 0 10px #fff;
+            opacity: 0.6;
+            animation: twinkle 2s infinite alternate ease-in-out;
+        }
+
+        .moving-star {
+            position: absolute;
+            width: 3px;
+            height: 3px;
+            background-color: #ffcc00;
+            border-radius: 50%;
+            box-shadow: 0 0 15px #ffcc00;
+            opacity: 0.8;
+            animation: moveStar 5s linear infinite;
+        }
+
+        .message {
+            margin-top: 20px;
+            font-size: 22px;
+            color: #80deea;
+            animation: fadeIn 4s ease-in-out;
+            text-shadow: 1px 1px 2px #000;
+        }
+    </style>
+</head>
+<body>
+    <div class="star-background">
+        <!-- Static Stars -->
+        <div class="star" style="top: 10%; left: 20%;"></div>
+        <div class="star" style="top: 20%; right: 30%;"></div>
+        <div class="star" style="top: 40%; left: 50%;"></div>
+        <div class="star" style="top: 70%; right: 70%;"></div>
+
+        <!-- Moving Stars -->
+        <div class="moving-star" style="top: 10%; left: -10%; animation-duration: 7s;"></div>
+        <div class="moving-star" style="top: 50%; left: -10%; animation-duration: 8s;"></div>
+        <div class="moving-star" style="top: 30%; left: -10%; animation-duration: 6s;"></div>
+    </div>
+
+    <div class="header">
+        <h1>Mahi's Dreamy Milk Night</h1>
+    </div>
+    
+    <div class="content">
+        <p>Mahi, remember to drink your milk and eat on time to stay strong and healthy! 🌟</p>
+        <div class="girl-container">
+            <img src="imgs/Free Vector _ Cute girl sitting and drinking milk cartoon character hand draw art illustration.jpg" alt="Girl Drinking Milk">
+        </div>
+        
+        <div class="images-section">
+            <!-- Add images related to food, milk, or anything Mahi likes -->
+            <img src="imgs/Free Vector _ Happy girl drinking bubble milk tea cartoon art illustration.jpg" alt="Bowl of Food">
+            <img src="imgs/Girl holding bubble tea cafe restaurant logo hand draw vector illustration.jpg" alt="Glass of Milk">
+            <img src="imgs/Premium Vector _ Cute girl eat salad vegetable fruits cartoon art illustration.jpg" alt="Fruit Plate">
+        </div>
+        
+        <div class="message">
+            You're a star, Mahi! Keep shining bright and take care of yourself. 🌙
+        </div>
+    </div>
+</body>
+</html>
